@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #d4d4d346;
+    font-family: 'Poppins', '-apple-system', 'BlinkMacSystemFont', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2vh 20vw;
+    padding: 2%;
+    height: 96vh;
+    background: #22b2da;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', 'Oswald', sans-serif;
+    box-shadow: 4px 6px 5px #44444440;
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+}
+
+.holder-headline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.holder-headline i {
+    margin-right: 2%;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
+
+.entry{
+    background: rgba(59, 74, 107, .4);
+}
+
+#entryHolder {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+}
+
+#city::before {
+    content: 'your city : ';
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#date::before {
+    content: 'current date : ';
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#temp::before {
+    content: 'temperature : ';
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#content::before {
+    content: 'your feeling : ';
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.holder-feel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60vw;
+}
+
+.holder-feel label {
+    width: 100%;
+}
+
+.holder-entry{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2%;
+    color: #22b2da;
+    background-color: white;
+    padding: 2%;
+    height: 40vh;
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+}
+
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 1.2em;
+    margin-top: 1%;
+}
+
+input{
+    display:block;
+    height: 50%;
+    width: 40%;
+    margin-top: 1%;
+    background: white;
+    color: #22b2da;
+    font-size: 20px;
+    font-family: 'Poppins', 'Oswald', sans-serif;
+    padding: 2%;
+    border: none;
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+}
+
+button{
+    width: 25%;
+    height: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background: #0E4959;
+    color: white;
+    font-size: 26px;
+    font-family: 'Poppins', 'Oswald', sans-serif;
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 4px 5px #44444440;
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+}
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background: white;
+    color: #22b2da;
+    font-size: 20px;
+    font-family: 'Poppins', 'Oswald', sans-serif;
+    text-transform: capitalize;
+    padding: 2%;
+    margin-top: 1%;
+    height: 20vh;
+    width: 100%;
+    border: none;
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */
+    color: #58564b7c;
+    font-family: 'Poppins', 'Oswald', sans-serif;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #58564b7c;
+    font-family: 'Poppins', 'Oswald', sans-serif;
+
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #58564b7c;
+    font-family: 'Poppins', 'Oswald', sans-serif;
+
+}
+
+@media (min-width : 1650px) {
+    textarea {
+        height: 10vh;
+    }
+
+    input {
+        height: 10vh;
+    }
+}
